@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo "yello....."
+                bat "java -jar target/maven-build-test-1.0-SNAPSHOT.jar"
             }
         }
 
