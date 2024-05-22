@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat "mvn clean package"
+                sh "mvn clean package"
             }
         }
         stage('Test') {
             steps {
-                bat "java -jar target/maven-build-test-1.0-SNAPSHOT.jar"
+                echo "yello....."
             }
         }
 
